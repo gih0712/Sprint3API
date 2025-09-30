@@ -16,3 +16,19 @@ Domínio: Gerenciamento de motos no pátio da Mottu, com classificação por cor
 3. Restaure dependências: dotnet restore.
 4. Execute: dotnet run.
 5. Acesse Swagger: http://localhost:50
+   
+## Comando para Testes
+1. Clone o repositório de testes: git clone https://github.com/seu-usuario/Sprint3APITeste.git.
+2. Entre na pasta: cd Sprint3APITeste.
+3. Restaure dependências: dotnet restore.
+4. Execute: dotnet test.
+
+## Exemplos de Uso
+- *POST /motos*: { "placa": "abc123", "cor": "vermelho", "status": "triagem", "tempoLimite": 15 } → Retorna 201 Created.
+- *GET /motos?page=1&pageSize=10*: Lista motos com links HATEOAS.
+- *POST /alertas*: { "descricao": "Tempo excedido", "motoId": 1 } → Cria alerta.
+
+## Dependências
+- .NET 8 SDK
+- Pacotes: Microsoft.AspNetCore.OpenApi, Swashbuckle.AspNetCore, Swashbuckle.AspNetCore.Filters
+- Testes: xUnit, Microsoft.AspNetCore.Mvc.Testing
