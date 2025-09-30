@@ -15,7 +15,7 @@ Domínio: Gerenciamento de motos no pátio da Mottu, com classificação por cor
 2. Entre na pasta: cd Sprint3API.
 3. Restaure dependências: dotnet restore.
 4. Execute: dotnet run.
-5. Acesse Swagger: http://localhost:50
+5. Acesse Swagger: http://localhost:5062
    
 ## Comando para Testes
 1. Clone o repositório de testes: git clone https://github.com/gih0712/Sprint3APITeste.git.
